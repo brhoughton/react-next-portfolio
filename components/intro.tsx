@@ -37,14 +37,14 @@ export default function Intro() {
           </motion.div>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         className="font-medium mb-10 mt-4 px-4 text-2xl !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi! My name is Breck and I am a Creative Director and Front-End
-        Developer with a focus in React.
-      </motion.p>
+        Hi! My name is Breck and I'm an experienced Creative Director and
+        Front-End Developer.
+      </motion.h1>
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
         initial={{ opacity: 0, y: 100 }}
@@ -69,12 +69,14 @@ export default function Intro() {
         <a
           className="flex items-center gap-2 p-4 px-4 text-gray-700 transition bg-gray-200 border rounded-full outline-none cursor-pointer group focus:scale-105 hover:scale-110 hover:bg-gray-300 active:scale-100 border-black/5"
           href="https://www.linkedin.com/in/breck-houghton/"
+          target="_blank"
         >
           <BsLinkedin className="transition opacity-70 group-hover:scale-105" />
         </a>
         <a
           className="flex items-center gap-2 p-4 px-4 text-gray-700 transition bg-gray-200 border rounded-full outline-none cursor-pointer group focus:scale-105 hover:scale-110 hover:bg-gray-300 active:scale-100 border-black/5"
           href="https://github.com/brhoughton"
+          target="_blank"
         >
           <BsGithub className="transition opacity-70 group-hover:scale-110" />
         </a>
