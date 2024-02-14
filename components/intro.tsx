@@ -2,19 +2,28 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
-import {
-  BsArrowRight,
-  BsChatDotsFill,
-  BsGithub,
-  BsLinkedin,
-} from "react-icons/bs";
+import { BsChatDotsFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection]);
+
   return (
     <section
+      ref={ref}
       id="home"
       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
@@ -45,8 +54,8 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi! My name is Breck and I'm an experienced Creative Director and
-        Front-End Developer.
+        Hi! My name is Breck and I'm an experienced designer and front-end
+        developer.
       </motion.h1>
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
