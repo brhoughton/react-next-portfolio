@@ -45,7 +45,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         Hi! My name is Breck and I'm an experienced Creative Director and
-        front-end developer.
+        Front-End Developer.
       </motion.h1>
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
