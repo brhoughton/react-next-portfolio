@@ -7,9 +7,11 @@ import Link from "next/link";
 import { BsChatDotsFill, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -64,6 +66,10 @@ export default function Intro() {
           className="flex items-center gap-2 py-3 text-gray-700 transition bg-gray-200 border rounded-full outline-none cursor-pointer px-7 group focus:scale-105 hover:scale-105 hover:bg-gray-300 active:scale-100 border-black/5"
           href="/CV.pdf"
           download
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Download Résumé{" "}
           <HiDownload className="transition opacity-70 group-hover:translate-y-1" />

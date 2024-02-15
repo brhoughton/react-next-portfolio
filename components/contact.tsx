@@ -5,6 +5,7 @@ import SectionHeading from "./section-heading";
 import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import { sendEmail } from "@/actions/sendEmail";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -30,15 +31,26 @@ export default function Contact() {
         </a>{" "}
         or you can reach out through this form.
       </p>
-      <form className="flex flex-col mt-10">
+      <form
+        className="flex flex-col mt-10"
+        action={async (formData) => {
+          await sendEmail(formData);
+        }}
+      >
         <input
           className="px-4 border rounded-lg h-14 border-black/10"
           type="email"
+          name="senderEmail"
+          required
+          maxLength={500}
           placeholder="Your email"
         />
         <textarea
           className="p-4 my-3 border rounded-lg h-52 border-black/10"
           placeholder="Your message"
+          name="message"
+          required
+          maxLength={3000}
         />
         <button
           type="submit"
