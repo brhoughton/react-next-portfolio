@@ -2,10 +2,12 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
+import { useFormStatus } from "react-dom";
+import SubmitBtn from "./submit-btn";
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -22,19 +24,20 @@ export default function Contact() {
     >
       <SectionHeading>Contact</SectionHeading>
       <p className="-mt-4 text-gray-700">
-        You can email me at{" "}
-        <a
-          className="font-semibold transition hover:text-green-500"
-          href="mailto:breck@brhdev.com"
-        >
-          breck@brhdev.com
-        </a>{" "}
-        or you can reach out through this form.
+        Use the form below to reach out and I'll get back to you as soon as
+        possible.
       </p>
       <form
         className="flex flex-col mt-10"
         action={async (formData) => {
-          await sendEmail(formData);
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error);
+            return;
+          }
+
+          toast.success("Message sent!");
         }}
       >
         <input
@@ -52,13 +55,7 @@ export default function Contact() {
           required
           maxLength={3000}
         />
-        <button
-          type="submit"
-          className="group items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all flex focus:scale-105 hover:scale-105 hover:bg-gray-700 active:scale-105"
-        >
-          Submit{" "}
-          <FaPaperPlane className="text-xs transition-all opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1" />
-        </button>
+        <SubmitBtn />
       </form>
     </motion.section>
   );
