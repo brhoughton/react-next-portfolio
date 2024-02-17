@@ -57,7 +57,7 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-105 hover:scale-105 hover:bg-gray-700 active:scale-100"
+          className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none dark:bg-gray-700 group px-7 focus:scale-105 hover:scale-105 hover:bg-gray-700 dark:hover:bg-gray-600 active:scale-100"
         >
           Let's Chat{" "}
           <BsChatDotsFill className="transition opacity-70 group-hover:rotate-12" />
