@@ -22,12 +22,12 @@ export default function Contact() {
       viewport={{ once: true }}
     >
       <SectionHeading>Contact</SectionHeading>
-      <p className="-mt-4 text-gray-700">
+      <p className="-mt-4 text-gray-700 dark:text-white/80">
         Use the form below to reach out and I'll get back to you as soon as
         possible.
       </p>
       <form
-        className="flex flex-col mt-10"
+        className="flex flex-col mt-10 dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -40,7 +40,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="px-4 border rounded-lg h-14 border-black/10"
+          className="px-4 transition-all border rounded-lg h-14 border-black/10 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none"
           type="email"
           name="senderEmail"
           required
@@ -48,7 +48,7 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="p-4 my-3 border rounded-lg h-52 border-black/10"
+          className="p-4 my-3 transition-all border rounded-lg h-52 border-black/10 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none"
           placeholder="Your message"
           name="message"
           required
