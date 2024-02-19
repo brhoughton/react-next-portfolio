@@ -23,8 +23,8 @@ export default function Contact() {
     >
       <SectionHeading>Contact</SectionHeading>
       <p className="-mt-4 text-gray-700 dark:text-white/80">
-        Use the form below to reach out and I'll get back to you as soon as
-        possible.
+        Have a question, know a good joke, or just want to chat? Use the form
+        below.
       </p>
       <form
         className="flex flex-col mt-10 dark:text-black"

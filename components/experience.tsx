@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext } from "react";
+import React from "react";
 import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
@@ -14,8 +14,9 @@ import { useTheme } from "@/context/theme-context";
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
+
   return (
-    <section ref={ref} id="experience" className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>Experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
@@ -42,6 +43,7 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
               visible={true}
+              animate={true}
             >
               <h3 className="font-bold">{item.title}</h3>
               <p className="!mt-0 !font-light">{item.location}</p>

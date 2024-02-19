@@ -1,10 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import videostreamingapp from "@/public/videostreamingapp.png";
+import shoppingcart from "@/public/shoppingcart.png";
+import foodorderingapp from "@/public/foodorderingapp.png";
+import weatherapp from "@/public/weatherapp.png";
+import calculatorapp from "@/public/calculatorapp.png";
 
 export const links = [
   {
@@ -37,7 +38,8 @@ export const experiencesData = [
   {
     title: "BS Graphic & Web Development",
     location: "AICS Sacramento, CA",
-    description: "",
+    description:
+      "Developed essential knowledge and skills required to design for print and digital environments as well as build usable and accessible front-end web apps.",
     icon: React.createElement(LuGraduationCap),
     date: "2012–2016",
   },
@@ -45,12 +47,12 @@ export const experiencesData = [
     title: "Graphic Designer",
     location: "Mykyla Inc, Roseville, CA",
     description:
-      "Responsible for in-house design, print, and production. Has a proven track record of reliability and consistency. Has managed successful projects and built continuing relationships with clients such as Swatch Group, Victoria's Secret, and Kaiser Permanente",
+      "Responsible for in-house design, print, and production. Has a proven track record of reliability and consistency. Managed successful projects and built continuing relationships with clients such as Swatch Group, Victoria's Secret, and Kaiser Permanente",
     icon: React.createElement(CgWorkAlt),
     date: "2008–2017",
   },
   {
-    title: "Graphic Designer",
+    title: "Graphic & Front-End Dev",
     location: "Dreambox Creative, Roseville, CA",
     description:
       "Primary responsibilities included ideation, design, and development of brand identities in both print and digital environments.",
@@ -61,45 +63,45 @@ export const experiencesData = [
     title: "Creative Director",
     location: "FLB Group, Folsom, CA",
     description:
-      "Responsible for creating, developing, deploying, and managing projects for multiple businesses each with unique identities.",
+      "Responsible for creating, developing, deploying, and managing projects and applications for various businesses.",
     icon: React.createElement(CgWorkAlt),
     date: "2019–Current",
   },
   {
-    title: "Professional Certification",
-    location: "Duke University, Programming Foundations",
+    title: "Programming Foundations, Duke University",
+    location: "Professional Certification",
     description:
       "Foundational programming concepts (functions, loops, conditional statements).",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
   },
   {
-    title: "Professional Certification",
-    location: "UC Davis, JavaScript",
-    description: "Front-End foundations in JavaScript",
+    title: "Front-End Foundations, UC Davis",
+    location: "Professional Certification",
+    description: "Foundational knowledge in JavaScript, HTML, and CSS.",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
   },
   {
-    title: "Professional Certification",
-    location: "Front-End Developer, Meta",
-    description: "advanced HTML and CSS, advanced React, UX/UI principles, ",
+    title: "Front-End Developer, Meta",
+    location: "Professional Certification",
+    description: "Advanced HTML and CSS, advanced React, UX/UI principles.",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
   },
   {
-    title: "Professional Certification",
-    location: "Back-End Developer, Meta",
+    title: "Back-End Developer, Meta",
+    location: "Professional Certification",
     description:
-      "Databases for back-end development, Django, Python, API development",
+      "Databases for back-end development, Django, Python, and API development.",
     icon: React.createElement(LuGraduationCap),
     date: "2023",
   },
   {
-    title: "Professional Certification",
-    location: "Advanced Front-End Developer, Codecademy",
+    title: "Advanced Front-End, Codecademy",
+    location: "Professional Certification",
     description:
-      "HTML, CSS, JavaScript, Git, React, Redux, data structures, algorithms",
+      "HTML, CSS, JavaScript, Git, React, Redux, data structures, and algorithms.",
     icon: React.createElement(LuGraduationCap),
     date: "2024",
   },
@@ -107,25 +109,39 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Video Streaming App",
     description:
-      "I worked as a full-stack developer on this startup project for two years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MondoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "A landing page clone with fully functional components including preview on hover and sidebar functionality.",
+    tags: ["React", "TypeScript", "Tailwind", "Vite"],
+    imageUrl: videostreamingapp,
   },
   {
-    title: "Word Analytics",
+    title: "Food Ordering App",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "An app for a local restaurant that allows guests to place their order online.",
+    tags: ["React", "TypeScript", "Tailwind", "Next.js"],
+    imageUrl: foodorderingapp,
   },
   {
-    title: "rmtDev",
+    title: "Shopping Cart",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has feature likes filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A fully functional shopping cart component that tracks quantity and cost.",
+    tags: ["React", "TypeScript", "Bootstrap"],
+    imageUrl: shoppingcart,
+  },
+  {
+    title: "Calculator App",
+    description:
+      "A calculator app that is able to process operations without relying on any outside libraries.",
+    tags: ["React", "CSS", "Vite"],
+    imageUrl: calculatorapp,
+  },
+  {
+    title: "Weather App",
+    description:
+      "A weather app that calls an API and returns the forecast for the users current location",
+    tags: ["JavaScript", "HTML", "CSS", "Vite"],
+    imageUrl: weatherapp,
   },
 ] as const;
 
@@ -142,6 +158,7 @@ export const skillsData = [
   "Git",
   "Tailwind",
   "Framer Motion",
+  "Bootstrap",
   "Cinema 4D",
   "Octane",
   "AfterEffects",

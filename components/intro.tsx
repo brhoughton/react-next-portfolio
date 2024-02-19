@@ -75,17 +75,20 @@ export default function Intro() {
           <HiDownload className="transition opacity-70 group-hover:translate-y-1" />
         </a>
         <a
-          className="flex items-center gap-2 p-4 px-4 text-gray-700 transition bg-gray-200 border rounded-full outline-none cursor-pointer group focus:scale-105 hover:scale-110 hover:bg-gray-300 active:scale-100 border-black/5"
+          className="flex items-center gap-2 py-3 text-gray-700 transition bg-gray-200 border rounded-full outline-none cursor-pointer px-7 group focus:scale-105 hover:scale-105 hover:bg-gray-300 active:scale-100 border-black/5"
           href="https://www.linkedin.com/in/breck-houghton/"
           target="_blank"
         >
+          LinkedIn{" "}
           <BsLinkedin className="transition opacity-70 group-hover:scale-105" />
         </a>
         <a
-          className="flex items-center gap-2 p-4 px-4 text-gray-700 transition bg-gray-200 border rounded-full outline-none cursor-pointer group focus:scale-105 hover:scale-110 hover:bg-gray-300 active:scale-100 border-black/5"
+          className="flex items-center gap-2 py-3 text-gray-700 transition bg-gray-200 border rounded-full outline-none cursor-pointer px-7 group focus:scale-105 hover:scale-105 hover:bg-gray-300 active:scale-100 border-black/5"
           href="https://github.com/brhoughton"
           target="_blank"
         >
+          {" "}
+          Github{" "}
           <BsGithub className="transition opacity-70 group-hover:scale-110" />
         </a>
       </motion.div>

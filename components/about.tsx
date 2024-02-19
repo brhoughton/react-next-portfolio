@@ -22,17 +22,17 @@ export default function About() {
         Fueled by my passion for transforming ideas into immersive experiences
         that seamlessly merge creativity with technology. With a robust
         background spanning front-end development, motion design, 3D modeling,
-        rendering, and visual communications, I specialize in crafting
-        experiences that resonate.
+        rendering, and visual communications, I truly enjoy crafting experiences
+        that resonate.
       </p>
       <p>
-        My extensive skill set, cultivated over years of hands-on experience has
-        equipped me to navigate the dynamic field of design and technology. I
-        integrate my expertise in front-end development to craft immersive,
-        user-centric interfaces. Motion design allows me to weave dynamic visual
-        narratives, while my skill set in 3D modeling and rendering injects
-        depth and realism, propelling projects further. Let's connect and build
-        something extraordinary together.
+        My skill set, cultivated over years of hands-on experience, has equipped
+        me to navigate the dynamic field of design and technology. I integrate
+        my expertise in front-end development to craft intuitive, user-centric
+        web apps. Motion design allows me to weave dynamic visual narratives,
+        while my skill set in 3D modeling and rendering injects depth and
+        realism, propelling projects further. Let's connect and build something
+        extraordinary together.
       </p>
     </motion.section>
   );
