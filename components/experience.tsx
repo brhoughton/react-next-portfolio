@@ -43,7 +43,6 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
               visible={true}
-              animate={true}
             >
               <h3 className="font-bold">{item.title}</h3>
               <p className="!mt-0 !font-light">{item.location}</p>
