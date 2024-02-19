@@ -46,7 +46,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi! My name is Breck and I am an experienced Creative Director and
+        Hi! My name is Breck and I&apos;m an experienced Creative Director and
         Front-End Developer.
       </motion.h1>
       <motion.div
@@ -59,7 +59,7 @@ export default function Intro() {
           href="#contact"
           className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none dark:bg-gray-700 group px-7 focus:scale-105 hover:scale-105 hover:bg-gray-700 dark:hover:bg-gray-600 active:scale-100"
         >
-          Let's Chat{" "}
+          Let&apos;s Chat{" "}
           <BsChatDotsFill className="transition opacity-70 group-hover:rotate-12" />
         </Link>
         <a
