@@ -31,7 +31,7 @@ export default function About() {
         my expertise in front-end development to craft intuitive, user-centric
         web apps. Motion design allows me to weave dynamic visual narratives,
         while my skill set in 3D modeling and rendering injects depth and
-        realism, propelling projects further. Let's connect and build something
+        realism, propelling projects further. Lets connect and build something
         extraordinary together.
       </p>
     </motion.section>

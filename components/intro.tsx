@@ -46,7 +46,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi! My name is Breck and I'm an experienced Creative Director and
+        Hi! My name is Breck and I am an experienced Creative Director and
         Front-End Developer.
       </motion.h1>
       <motion.div
