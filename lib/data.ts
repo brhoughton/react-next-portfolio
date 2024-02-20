@@ -114,6 +114,7 @@ export const projectsData = [
       "A landing page clone with fully functional components including preview on hover and sidebar functionality.",
     tags: ["React", "TypeScript", "Tailwind", "Vite"],
     imageUrl: videostreamingapp,
+    link: "https://github.com/brhoughton/react-video-streaming-app",
   },
   {
     title: "Food Ordering App",
@@ -121,6 +122,7 @@ export const projectsData = [
       "An app for a local restaurant that allows guests to place their order online.",
     tags: ["React", "TypeScript", "Tailwind", "Next.js"],
     imageUrl: foodorderingapp,
+    link: "https://github.com/brhoughton/react-food-ordering-app",
   },
   {
     title: "Shopping Cart",
@@ -128,6 +130,7 @@ export const projectsData = [
       "A fully functional shopping cart component that tracks quantity and cost.",
     tags: ["React", "TypeScript", "Bootstrap"],
     imageUrl: shoppingcart,
+    link: "https://github.com/brhoughton/react-shopping-cart-app",
   },
   {
     title: "Calculator App",
@@ -135,6 +138,7 @@ export const projectsData = [
       "A calculator app that is able to process operations without relying on any outside libraries.",
     tags: ["React", "CSS", "Vite"],
     imageUrl: calculatorapp,
+    link: "https://github.com/brhoughton/react-calculator-app",
   },
   {
     title: "Weather App",
@@ -142,6 +146,7 @@ export const projectsData = [
       "A weather app that calls an API and returns the forecast for the users current location",
     tags: ["JavaScript", "HTML", "CSS", "Vite"],
     imageUrl: weatherapp,
+    link: "https://github.com/brhoughton/weather-app",
   },
 ] as const;
 
