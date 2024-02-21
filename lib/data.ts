@@ -130,7 +130,7 @@ export const projectsData = [
       "A fully functional shopping cart component that tracks quantity and cost.",
     tags: ["React", "TypeScript", "Bootstrap"],
     imageUrl: shoppingcart,
-    link: "https://react-shopping-cart-app-vert.vercel.app/store",
+    link: "https://github.com/brhoughton/react-shopping-cart-app",
   },
   {
     title: "Calculator App",
