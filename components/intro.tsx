@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import Link from "next/link";
 import { BsChatDotsFill, BsGithub, BsLinkedin } from "react-icons/bs";
+import { SiAdobe } from "react-icons/si";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -84,7 +85,15 @@ export default function Intro() {
         </a>
         <a
           className="flex items-center gap-2 py-3 text-gray-700 transition bg-gray-200 border rounded-full outline-none cursor-pointer px-7 group focus:scale-105 hover:scale-105 hover:bg-gray-300 active:scale-100 border-black/5"
-          href="https://github.com/brhoughton"
+          href="https://www.linkedin.com/in/breck-houghton/"
+          target="_blank"
+        >
+          Adobe{" "}
+          <SiAdobe className="transition opacity-70 group-hover:scale-105" />
+        </a>
+        <a
+          className="flex items-center gap-2 py-3 text-gray-700 transition bg-gray-200 border rounded-full outline-none cursor-pointer px-7 group focus:scale-105 hover:scale-105 hover:bg-gray-300 active:scale-100 border-black/5"
+          href="https://breckhoughton.com"
           target="_blank"
         >
           {" "}
