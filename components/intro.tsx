@@ -85,7 +85,7 @@ export default function Intro() {
         </a>
         <a
           className="flex items-center gap-2 py-3 text-gray-700 transition bg-gray-200 border rounded-full outline-none cursor-pointer px-7 group focus:scale-105 hover:scale-105 hover:bg-gray-300 active:scale-100 border-black/5"
-          href="https://www.linkedin.com/in/breck-houghton/"
+          href="https://www.breckhoughton.com"
           target="_blank"
         >
           Adobe{" "}
@@ -93,7 +93,7 @@ export default function Intro() {
         </a>
         <a
           className="flex items-center gap-2 py-3 text-gray-700 transition bg-gray-200 border rounded-full outline-none cursor-pointer px-7 group focus:scale-105 hover:scale-105 hover:bg-gray-300 active:scale-100 border-black/5"
-          href="https://breckhoughton.com"
+          href="https://github.com/brhoughton"
           target="_blank"
         >
           {" "}
