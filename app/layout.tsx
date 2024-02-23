@@ -6,7 +6,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,10 +30,10 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
-            <GoogleAnalytics gaId="G-1WRYY0YBSH" />
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
+          <Analytics />
         </ThemeContextProvider>
       </body>
     </html>
