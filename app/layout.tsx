@@ -13,7 +13,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "BRH | Front-End Developer",
-  description: "Breck is a Front-End Developer.",
+  description:
+    "Breck is a Creative Director and Front-End Developer based out of Roseville, California.",
+  metadataBase: new URL("https://www.brhdev.com"),
 };
 
 export default function RootLayout({
