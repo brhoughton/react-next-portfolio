@@ -30,7 +30,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
-            <GoogleAnalytics gaId="G-FCEGJR19F6" />
+            <GoogleAnalytics gaId="G-1WRYY0YBSH" />
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
