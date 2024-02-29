@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/third-parties": "^14.1.0",
+    "@next/third-parties": "^14.0.5-canary.38",
     "@react-email/components": "^0.0.14",
     "@react-email/tailwind": "^0.0.14",
     "@types/node": "20.11.16",
@@ -22,6 +22,7 @@
     "eslint-config-next": "14.1.0",
     "framer-motion": "^11.0.3",
     "next": "^14.1.0",
+    "nextjs-google-analytics": "^2.3.3",
     "postcss": "8.4.35",
     "react": "18.2.0",
     "react-dom": "18.2.0",

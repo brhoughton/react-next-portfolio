@@ -8,7 +8,7 @@ import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -39,6 +39,7 @@ export default function RootLayout({
           <Analytics />
         </ThemeContextProvider>
       </body>
+      <GoogleAnalytics gaId="G-NB8M4G726N" />
     </html>
   );
 }
