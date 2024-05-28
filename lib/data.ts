@@ -132,22 +132,22 @@ export const projectsData = [
 		imageUrl: shoppingcart,
 		link: "https://github.com/brhoughton/react-shopping-cart-app",
 	},
-	{
-		title: "Calculator App",
-		description:
-			"A calculator app that is able to process operations without relying on any outside libraries.",
-		tags: ["React", "CSS", "Vite"],
-		imageUrl: calculatorapp,
-		link: "https://github.com/brhoughton/react-calculator-app",
-	},
-	{
-		title: "Weather App",
-		description:
-			"A weather app that calls an API and returns the forecast for the users current location",
-		tags: ["JavaScript", "HTML", "CSS", "Vite"],
-		imageUrl: weatherapp,
-		link: "https://github.com/brhoughton/weather-app",
-	},
+	// {
+	// 	title: "Calculator App",
+	// 	description:
+	// 		"A calculator app that is able to process operations without relying on any outside libraries.",
+	// 	tags: ["React", "CSS", "Vite"],
+	// 	imageUrl: calculatorapp,
+	// 	link: "https://github.com/brhoughton/react-calculator-app",
+	// },
+	// {
+	// 	title: "Weather App",
+	// 	description:
+	// 		"A weather app that calls an API and returns the forecast for the users current location",
+	// 	tags: ["JavaScript", "HTML", "CSS", "Vite"],
+	// 	imageUrl: weatherapp,
+	// 	link: "https://github.com/brhoughton/weather-app",
+	// },
 ] as const;
 
 export const skillsData = [
