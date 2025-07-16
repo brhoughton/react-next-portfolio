@@ -25,12 +25,11 @@ export default function About() {
 				creating work that truly resonates.
 			</p>
 			<p>
-				Over the years, I've built a versatile skill set through hands-on
+				Over the years, I&apos;ve built a versatile skill set through hands-on
 				experience. I design user-friendly web apps with a strong front-end
 				foundation, bring stories to life through motion design, and add realism
 				and depth with 3D modeling and rendering. I thrive at the intersection
-				of design and tech—and I'm always excited to collaborate on something
-				extraordinary.
+				of design and tech. Let&apos;s connect.
 			</p>
 		</motion.section>
 	);
