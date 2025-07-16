@@ -30,7 +30,7 @@ export default function About() {
 				foundation, bring stories to life through motion design, and add realism
 				and depth with 3D modeling and rendering. I thrive at the intersection
 				of design and tech—and I'm always excited to collaborate on something
-				extraordinary. Lets connect.
+				extraordinary.
 			</p>
 		</motion.section>
 	);
