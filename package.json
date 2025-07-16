@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@next/third-parties": "^14.0.5-canary.38",
-    "@react-email/components": "^0.0.14",
+    "@react-email/components": "^0.3.1",
     "@react-email/tailwind": "^0.0.14",
     "@types/node": "20.11.16",
     "@types/react": "18.2.55",
